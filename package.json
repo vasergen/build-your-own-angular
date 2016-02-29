@@ -1,0 +1,19 @@
+{
+  "name": "build-your-own-angular",
+  "version": "1.0.0",
+  "description": "This is code examples from book \"Build your own angular js\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vasergen/build-your-own-angular.git"
+  },
+  "author": "vasergen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vasergen/build-your-own-angular/issues"
+  },
+  "homepage": "https://github.com/vasergen/build-your-own-angular#readme"
+}

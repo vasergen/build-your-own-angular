@@ -17,12 +17,9 @@ gulp.task('jasmine', () => {
     .pipe(jasmine())
 })
 
-//dont work yet
 gulp.task('karma', function (done) {
   new Server({
     configFile: __dirname + '/karma.conf.js',
     singleRun: true
-  }, function() {
-    done()
-  }).start()
+  }, done).start()
 })

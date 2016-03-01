@@ -12,12 +12,7 @@ gulp.task('jshint', () => {
     .pipe(jshint.reporter())
 })
 
-gulp.task('jasmine', () => {
-  gulp.src('./test/**/*.js')
-    .pipe(jasmine())
-})
-
-gulp.task('karma', function (done) {
+gulp.task('test', function (done) {
   new Server({
     configFile: __dirname + '/karma.conf.js',
     singleRun: true

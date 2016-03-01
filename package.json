@@ -15,5 +15,18 @@
   "bugs": {
     "url": "https://github.com/vasergen/build-your-own-angular/issues"
   },
-  "homepage": "https://github.com/vasergen/build-your-own-angular#readme"
+  "homepage": "https://github.com/vasergen/build-your-own-angular#readme",
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "lodash": "^4.5.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jasmine": "^2.3.0",
+    "gulp-jshint": "^2.0.0",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.21",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-jasmine": "^0.3.7"
+  }
 }

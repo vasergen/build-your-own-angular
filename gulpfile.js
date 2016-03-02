@@ -6,7 +6,7 @@ let jasminePhantom = require('gulp-jasmine-phantom')
 let jasmine = require('gulp-jasmine')
 let Server = require('karma').Server
 
-gulp.task('jshint', () => {
+gulp.task('lint', () => {
   gulp.src(['./src/**/*.js', './test/**/*.js'])
     .pipe(jshint())
     .pipe(jshint.reporter())
@@ -15,6 +15,6 @@ gulp.task('jshint', () => {
 gulp.task('test', function (done) {
   new Server({
     configFile: __dirname + '/karma.conf.js',
-    singleRun: true
+    singleRun: false
   }, done).start()
 })

@@ -4,10 +4,12 @@
 module.exports = function(config) {
   config.set({
     basePath: '',
-    frameworks: ['jasmine', 'es6-shim'],
+    frameworks: ['jasmine', 'browserify'],
     files: [
       'src/*.js',
-      'test/*.js'
+      'test/*.js',
+      'vendor/lodash.js',
+      'vendor/jquery.js'
     ],
     exclude: [],
     preprocessors: {
@@ -21,7 +23,15 @@ module.exports = function(config) {
         sourceMap: 'inline'
       }
     },
-    reporters: ['progress'],
+    specReporter: {
+        maxLogLines: 5,
+        suppressErrorSummary: false,
+        suppressFailed: false,
+        suppressPassed: false,
+        suppressSkipped: true,
+        showSpecTiming: true
+      },
+    reporters: ['spec'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,

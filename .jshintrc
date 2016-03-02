@@ -4,7 +4,7 @@
     "$": "false",
     "jasmine": "false",
     "describe": "false",
-    "it": "false",
+    "it": "true",
     "expect": "false",
     "beforeEach": "false",
     "afterEach": "false",
@@ -13,5 +13,6 @@
   "asi": true,
   "globalstrict": true,
   "browser": true,
-  "devel": true
+  "devel": true,
+  "esversion": 6
 }
